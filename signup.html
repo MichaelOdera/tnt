@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <style>
+        body{
+            background-color: rgba(0, 0, 0, 0.7);}
+    </style>
+</head>
+<body>
+
+        <div class="topnav" id="Topnav">
+                <ul>
+                  <li><img src="https://i.pinimg.com/236x/39/f9/3a/39f93a34604ca9fba2e3988f4d413acf.jpg"></li>
+                  <li><a href="index.html" class="active">HOME</a></li>
+                  <li><a href="about.html">ABOUT</a></li>
+                  <li><a href="index.html#contact">CONTACT</a></li>
+                  <li><a href="login.html" class="active">LOGIN</a></li>
+                    <div class="dropdown icon">
+                        <button class="dropdown-button">Menu</button>
+                            <div class="dropdown-list">
+                                <a href="index.html">Home</a>
+                                <a href="about.html">About</a>
+                            </div>
+                    </div>
+                </ul>
+              </div>
+
+
+
+    <!--Scripting for the upscroll-->
+    <script>
+            var prevScrollpos = window.pageYOffset;
+            window.onscroll = function() {
+              var currentScrollPos = window.pageYOffset;
+              if (prevScrollpos > currentScrollPos) {
+                document.getElementById("Topnav").style.top = "0";
+                } else {
+                  document.getElementById("Topnav").style.top = "-100px";
+                  }
+                prevScrollpos = currentScrollPos;
+                }
+        </script>
+       
+        <!--the top right-side menu button script-->
+        <script>
+            function myFunction() {
+              var x = document.getElementById("Topnav");
+              if (x.className === "topnav") {
+                x.className += " responsive";
+              } else {
+                x.className = "topnav";
+              }
+            }
+        </script>
+
+
+    <div id="signup">
+        <h2>Sign Up</h2>
+        <form action="PHP_SELF" method="POST">
+            <label for="first-name">First Name<span>*</span></label><br>
+            <input type="text" name="first-name" placeholder="Enter your first name..." required><br>
+
+            <label for="middle-name">Middle Name</label><br>
+            <input type="text" name="middle-name" placeholder="Enter your middle name..." ><br>
+
+            <label for="surname">Surname <span>*</span></label><br>
+            <input type="text" name="fname" placeholder="Enter your surname..." required><br>
+
+            
+            <label for="email">Email <span>*</span></label><br>
+            <input type="email" name="email" placeholder="Enter your email..." required><br>
+
+            <label for="password">Password <span>*</span></label><br>
+            <input type="password" name="password" placeholder="Enter password email..." required><br>
+
+            <label for="confirm-password">Confirm Password <span>*</span></label><br>
+            <input type="password" name="confirm-password" placeholder="Re-enter your password ..." required><br>
+
+
+
+            <input type="submit" name="submit" value="SIGN UP">
+
+
+            <p>Already signed up? <a href="login.html">Click here to login</a></p>
+                
+        </form>
+    </div>
+</body>
+</html>

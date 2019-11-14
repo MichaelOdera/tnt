@@ -1,0 +1,966 @@
+.topnav {
+    overflow: hidden;
+    left: 0;
+    right: 0;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    
+}
+
+.topnav ul {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    right: 0;
+    margin-top: 0px;
+    align-items: center;
+    background-color: red; 
+    box-shadow: 0px 2px 4px white;
+    overflow: hidden;
+
+}
+
+.topnav .icon {
+    display: none;
+}
+
+
+.topnav ul li {
+    margin-right: 10%;
+    list-style: none;
+    text-align: center;
+    color: white;
+    align-items: initial;
+}
+
+.topnav ul li img {
+    margin-top: 3px;
+    height: 80px;
+    width: 100px;
+    border: 2px solid red;
+    border-radius: 5px;
+}
+
+.topnav ul li a {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    padding: 30%;
+}
+
+.topnav ul li a:hover {
+    background: black;
+    border: 5px;
+}
+
+.topnav select {
+    background-color: red;
+    color: white;
+    width: 180px;
+    height: 30%;
+    z-index: 1;
+    margin-right: 1%;
+    padding: 2%;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    outline: none;
+}
+
+.topnav option {
+    background-color: red;
+    color: white;
+    padding: 2%;
+}
+
+.topnav option:hover {
+    background-color: white;
+    color: black;
+}
+
+.topnav select:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Dropdown Button */
+.topnav .icon {
+    display: none;
+}
+
+/* Dropdown Button */
+.dropdown-button {
+    background-color: black;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-list {
+    display: flex;
+    display: none;
+    position: relative;
+    background-color: grey;
+    color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+/* Links inside the dropdown */
+.dropdown-list a {
+    color: black;
+    padding: 12px 10px;
+    text-decoration: none;
+    display: block;
+    font-family: verdana;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-list a:hover {
+    background-color: black;
+    color: white;
+    z-index: 1;
+}
+
+/* Show the dropdown list on hover */
+.dropdown:hover .dropdown-list {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown list is shown */
+.dropdown:hover .dropdown-button {
+    background-color: black;
+}
+
+/*Query for the top nav to disappear on resizing*/
+@media only screen and (max-width: 650px) {
+
+    .mail-us>ul>li:first-child,
+    .topnav ul li:not(:first-child) {
+        display: none;
+    }
+
+    .topnav .icon {
+        float: right;
+        display: block;
+    }
+}
+
+
+@media only screen and (max-width: 620px) {
+    .topnav .responsive {
+        position: relative;
+    }
+
+    .topnav .responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav .responsive ul li a {
+        float: none;
+        display: block;
+        text-align: right;
+    }
+}
+
+
+
+
+
+/*the social media icon bar*/
+.icon-bar {
+    position: fixed;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    transition: all 0.3s ease;
+    color: black;
+    font-size: 20px;
+}
+
+.icon-bar a:hover {
+    background-color: red;
+    width: 80%;
+    transition: 0.4s;
+    z-index: 1;
+}
+
+.facebook {
+    background: white;
+    color: black;
+}
+
+.twitter {
+    background: white;
+    color: black;
+}
+
+.google {
+    background: white;
+    color: black;
+}
+
+.linkedin {
+    background: white;
+    color: black;
+}
+
+.youtube {
+    background: white;
+    color: black;
+}
+
+/*The container and the overlay*/
+.container {
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-image: url('https://www.chevrolet.com/content/dam/chevrolet/na/us/english/index/vehicles/2019/performance/corvette-stingray1/mov/01-images/2019-corvette-stingray-masthead.jpg?imwidth=960');
+    background-size: cover;
+    background-attachment: fixed;
+    height: 10%;
+    padding-top: 5%;
+}
+
+#overlay {
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    padding-top: 10%;
+    margin-top: -2%;
+}
+
+#overlay h1 {
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 3px solid white;
+    border-radius: 6px;
+    width: 40%;
+    padding: 1%;
+    margin-left: 30%;
+}
+
+#overlay h3 {
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1%;
+    width: 40%;
+    margin-left: 30%;
+}
+
+#overlay h1:hover {
+    background: red;
+}
+
+/*The shopping links section*/
+.shop-links {
+    margin-top: 7%;
+    margin-bottom: 0;
+    padding-bottom: 3%;
+}
+
+.shop-links ul {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-around;
+
+}
+
+.shop-links ul li a {
+    display: block;
+    text-align: center;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 160%;
+    padding: 5%;
+}
+
+.shop-links ul li {
+    list-style: none;
+    width: 30%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.shop-links ul li a .fa {
+    font-size: 70px;
+}
+
+.shop-links ul li:first-child {
+    height: 1%;
+}
+
+.engines {
+    color: black;
+    font-size: 70px;
+    margin-top: -1%;
+}
+
+.wheels {
+    color: black;
+    font-size: 70px;
+}
+
+.lubricants {
+    color: black;
+    font-size: 70px;
+}
+
+.cars {
+    color: black;
+    font-size: 70px;
+}
+
+.rims {
+    color: black;
+    font-size: 70px;
+}
+
+.ratings {
+    color: black;
+    font-size: 70px;
+}
+
+.shop-links ul li a:hover {
+    color: red;
+}
+
+
+/*Styling for the third part of my home page which is the image stack*/
+.image-stack {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.image-stack section {
+    width: 400px;
+    display: inline-block;
+    overflow: hidden;
+    padding-top: 0;
+    padding-bottom: 80px;
+}
+
+section {
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    box-shadow: 0px -3px 2px 2px red;
+    overflow: hidden;
+}
+
+.image-stack section img {
+    width: 100%;
+    height: 45%;
+    z-index: 100;
+}
+
+.image-stack section img:hover {
+    transition: all ease .2s;
+    transform: scale(1.02);
+}
+
+.image-stack section div {
+    font-size: 25px;
+    background: darkgrey;
+    margin: 0;
+    padding: 4%;
+    text-align: center;
+    height: 60%;
+}
+
+section div hr {
+    text-align: left;
+}
+
+section div p {
+    padding: 4%;
+    margin-top: 2px solid red;
+    border-width: 10%;
+
+}
+
+section div p:before {
+    content: "";
+    /* This is necessary for the pseudo element to work. */
+    display: block;
+    /* This will put the pseudo element on its own line. */
+    width: 50%;
+    /* Change this to whatever width you want to have before hover. */
+    padding-top: 4%;
+    padding-left: 25%;
+    border-top: 2px solid red;
+    /* This creates the border. Replace black with whatever color you want. */
+    transition: .5s;
+}
+
+.shop-links ul li {
+    list-style: none;
+    width: 30%;
+}
+
+section div p:hover:before {
+    width: 80%;
+}
+
+section div a {
+    margin-top: 5%;
+    text-decoration: none;
+    color: white;
+    background: black;
+    padding: 15px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+section div a:hover {
+    background-color: rgb(255, 0, 0);
+    transition: 0.5s;
+}
+
+.image-stack section div.even {
+    background: grey;
+}
+
+.image-stack {
+    margin-top: -2%;
+}
+
+/*Styling for the subscription and the mailing part*/
+.subscription {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url('https://cdn.images.express.co.uk/img/dynamic/24/590x/1198692_1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    font-size: 36px;
+    margin-top: 0px;
+    text-align: center;
+    padding-bottom: 2%;
+    overflow: hidden;
+    height: 300px;
+}
+
+#subscribe {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(175, 128, 128, 0.4);
+    margin-bottom: 4%;
+}
+
+#subscribe form {
+    width: 100%;
+    padding-bottom: 90px;
+}
+
+#subscribe form input[type=email] {
+    width: 70%;
+    height: 10px;
+    font-size: 25px;
+    border-radius: 10px;
+    padding: 2%;
+    outline: none;
+    margin-left: 10%;
+    margin-top: 2%;
+    border: 2px solid red;
+    outline: none;
+}
+
+#subscribe form input[type=submit] {
+    width: 70%;
+    height: 20px;
+    margin-top: 1%;
+    margin-left: 10%;
+    background-color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    padding: 1%;
+    padding-bottom: 4%;
+}
+
+#subscribe form input[type=submit]:hover {
+    background-color: rgb(255, 50, 50);
+}
+
+#subscribe form textarea {
+    width: 70%;
+}
+
+
+/* the mailing part*/
+.mail-us {
+    width: 80%;
+    margin-left: 10%;
+}
+
+.mail-us h1 {
+    color: white;
+}
+
+.mail-us ul {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-left: 2%;
+}
+
+.mail-us ul li {
+    display: inline-block;
+    overflow: hidden;
+    width: 500px;
+}
+
+.mail-us ul li:first-child {
+    display: inline-block;
+    overflow: hidden;
+}
+
+.mail-us ul li img {
+    transition: .2s;
+}
+
+.mail-us ul li img:hover {
+    transition: all .2s;
+    overflow: hidden;
+    transform: scale(1.5);
+}
+
+/* the mailing form*/
+.mail-us ul li form {
+    text-align: center;
+    margin-top: 0;
+    border: 2px solid grey;
+    height: 97%;
+    width: 90%;
+    padding: 4%;
+    color: white;
+    background-color: red;
+    overflow: hidden;
+}
+
+.mail-us ul li a {
+    color: green;
+    text-decoration: none;
+}
+
+.mail-us ul li a:hover {
+    color: black;
+}
+
+.mail-us ul li form select {
+    margin-bottom: 10%;
+    width: 70%;
+    height: 5%;
+    background-color: black;
+    color: white;
+}
+
+.mail-us ul li form select:hover {
+    background-color: white;
+    color: black;
+}
+
+.mail-us ul li form input[type=text],
+.mail-us ul li form input[type=email] {
+    width: 90%;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.list-form {
+    width: 100%;
+}
+
+.mail-us ul li form input[type=submit] {
+    width: 50%;
+    padding: 7px;
+    border-radius: 5px;
+}
+
+.mail-us li table {
+    background: black;
+    color: white;
+    padding: 2%;
+    border: 1px solid red;
+    height: 400px;
+    border: 5px;
+}
+
+
+
+/*The Video Styling Page*/
+#youtube_video h2 {
+    text-align: center;
+    width: 60%;
+    background-color: black;
+    color: white;
+    margin-left: 20%;
+    font-size: 120%;
+    border-radius: 7px;
+    padding: 2%;
+    margin-bottom: -1%;
+    z-index: 1;
+}
+
+.active {
+    background-color: black;
+}
+
+
+/*The sales page*/
+.sales ul {
+    text-align: center;
+}
+
+.sales ul li {
+    list-style: none;
+    display: inline-block;
+    height: 580px;
+    width: 500px;
+    border: 1px solid grey;
+    overflow: hidden;
+    align-items: center;
+}
+
+.sales ul li p {
+    height: 40%;
+    width: 100%;
+}
+
+.sales ul li img {
+    width: 73%;
+    height: 150%;
+    border-radius: 7px;
+    transition: .2s;
+}
+
+.sales ul li img:hover {
+    box-shadow: 0px 0px 3px 3px grey;
+    transition: all .2s;
+    overflow: hidden;
+    transform: scale(1.02);
+
+}
+
+.sales ul li button {
+    margin-bottom: 0;
+    align-items: center;
+    background-color: red;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 7px;
+    border-radius: 4px;
+    outline: none;
+}
+
+.sales ul li button:hover {
+    background-color: black;
+    transition: all .2s;
+    transform: scale(1.01);
+}
+
+.ratings ul {
+    width: 57%;
+    margin-left: 10%;
+}
+
+
+.ratings ul p {
+    font-size: 18px;
+}
+
+
+
+/*About Page Styling*/
+.iconify {
+
+    font-size: 150px;
+    z-index: -1;
+}
+
+.airbnb:hover {
+    transition: all .2s;
+    color: #A52A2A;
+    font-size: 160px;
+}
+
+.galactic:hover {
+    transition: all .2s;
+    color: #1b2a49;
+    font-size: 160px;
+}
+
+.penny:hover {
+    transition: all .2s;
+    color: #f7be16;
+    font-size: 160px;
+}
+
+.beyond:hover {
+    transition: all .2s;
+    color: #e42c64;
+    font-size: 160px;
+}
+
+.aviato:hover {
+    transition: all .2s;
+    color: #b5525c;
+    font-size: 160px;
+}
+
+.maple:hover {
+    transition: all .2s;
+    color: #ff0000;
+    font-size: 160px;
+}
+
+.affiliate:hover {
+    transition: all .2s;
+    color: #7b3c3c;
+    font-size: 160px;
+}
+
+.amazon:hover {
+    font-size: 160px;
+    transition: all .2s;
+}
+
+#about_top {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    padding: 3%;
+    color: red;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: 6%;
+    background-image: url('https://i.pinimg.com/236x/04/af/06/04af06824dd2896eea5ca26ae943ba3f.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5%;
+    overflow: hidden;
+    margin-top: 4%;
+}
+
+#about_top #overlay {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 5%;
+    border: 1px solid red;
+    border-radius: 30px;
+}
+
+#about_top p {
+    margin: 2%;
+    font-size: 18px;
+    color: white;
+}
+
+#about_middle h1 {
+    text-align: center;
+    color: white;
+    background-color: red;
+    padding: 1%;
+    width: 40%;
+    border-radius: 25px;
+}
+
+#about_middle ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 45px;
+}
+
+#about_middle ul li {
+    list-style: none;
+    width: 200px;
+    height: 250px;
+    padding: 4%;
+    border: 2px solid red;
+    margin: 20px;
+}
+
+/*Sign up page*/
+#signup {
+    text-align: center;
+    padding: 3%;
+    color: white;
+    width: 60%;
+    border-radius: 10px;
+    border: 2px solid grey;
+    background-color: red;
+    margin-left: 20%;
+    margin-top: 12%;
+}
+
+#signup span {
+    color: black;
+}
+
+#signup a {
+    color: green;
+}
+
+#signup input[type=text],
+#signup input[type=email],
+#signup input[type=password] {
+    width: 80%;
+    text-align: center;
+    margin-bottom: 5%;
+    height: 20px;
+    border-radius: 7px;
+    outline: none;
+}
+
+#signup p {
+    text-align: center;
+}
+
+#signup input[type=submit] {
+    width: 40%;
+    margin-bottom: 5%;
+    height: 30px;
+    color: rgba(0, 0, 0, 0.7);
+    outline: none;
+    color: black;
+    font-weight: bold;
+}
+
+
+/*Login Page*/
+#login {
+    text-align: center;
+    padding: 3%;
+    color: white;
+    width: 60%;
+    border-radius: 10px;
+    border: 2px solid grey;
+    background-color: red;
+    margin-left: 20%;
+    margin-top: 20%;
+}
+
+#login span {
+    color: rgb(194, 181, 181);
+}
+
+#login a {
+    color: green;
+}
+
+#login input[type=text],
+#login input[type=email],
+#login input[type=password] {
+    width: 80%;
+    text-align: center;
+    margin-bottom: 5%;
+    height: 20px;
+    border-radius: 7px;
+    outline: none;
+}
+
+#login p {
+    text-align: center;
+}
+
+#login input[type=submit] {
+    width: 40%;
+    margin-bottom: 5%;
+    height: 30px;
+    color: rgba(0, 0, 0, 0.7);
+    outline: none;
+    color: black;
+    font-weight: bold;
+}
+
+/*Fade in effect*/
+body {
+    animation: fadeIn ease 3s;
+    -webkit-animation: fadeIn ease 3s;
+    -moz-animation: fadeIn ease 3s;
+    -o-animation: fadeIn ease 3s;
+    -ms-animation: fadeIn ease 3s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
